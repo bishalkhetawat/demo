@@ -1,0 +1,12 @@
+
+public class MyServlet extends HttpServlet
+{
+
+	int a; // instance variable
+	public void doGet(HttpServletRequest request,HttpServletResponse response)throws IOException,ServletException
+	{
+		//int b=0; // local variable	
+		b++;
+		out.println(b)
+	}
+}

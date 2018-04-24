@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+<h1> The ng-repeat directive used on an array of objects:</h1>
+<div ng-app="" ng-init="cgiStudents=[
+{name:'Supraj',stream:'Mechanical'},
+{name:'Adarsh',stream:'CS'},
+{name:'Rohan',stream:'BE'},
+{name:'Tejas',stream:'BTech'}]">
+
+<p>Looping with objects:</p>
+<ul>
+  <li ng-repeat="x in cgiStudents">
+  {{ x.name + ', ' + x.stream }}</li>
+</ul>
+
+</div>
+
+</body>
+</html>

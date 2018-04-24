@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-app="">
+
+
+<form>
+  Select a topic:
+  <select ng-model="myVar">
+    <option value="">
+    <option value="work">Work Hard
+    <option value="learn"> Learn a Lot
+    <option value="earn"> Earn a Lot
+  </select>
+</form>
+
+<div ng-switch="myVar">
+  <div ng-switch-when="work">
+     <h1>Work Hard</h1>
+     <p>Hard work produces resubt..But Be smart</p>
+  </div>
+  <div ng-switch-when="learn">
+     <h1>Learning is Fun</h1>
+     <p>Learn from every where...from nature...and by your own experience ....</p>
+  </div>
+  <div ng-switch-when="earn">
+     <h1>Earn a lot and Enjoy Life</h1>
+     <p> Keep Learning..and Keep Earning...Keep Spending...Keep Saving...</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>  
+<body ng-app="">
+
+<p>Try leaving the first input field blank:</p>
+
+<form name="myForm">
+<p>Name:
+<input name="myName" ng-model="myName" required>
+<span ng-show="myForm.myName.$touched && myForm.myName.$invalid">The name is required.</span>
+</p>
+<br>
+
+Dirty Status : <span ng-show="myForm.myName.$dirty"> The field is dirty </span>
+<br/>
+ Pristine status : <span ng-show="myForm.myName.$pristine"> The field is not modified yet </span>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-app="">
+
+<form>
+  How will I live my life?
+  <input type="radio" ng-model="myVar" value="work"> Work Hard
+  <input type="radio" ng-model="myVar" value="learn"> Learn More
+  <input type="radio" ng-model="myVar" value="earn"> earn More
+</form>
+
+<div ng-switch="myVar">
+  <div ng-switch-when="work">
+     <h1>Work Hard</h1>
+     <p>Hard work produces resubt..But Be smart</p>
+  </div>
+  <div ng-switch-when="learn">
+     <h1>Learning is Fun</h1>
+     <p>Learn from every where...from nature...and by your own experience ....</p>
+  </div>
+  <div ng-switch-when="earn">
+     <h1>Earn a lot and Enjoy Life</h1>
+     <p> Keep Learning..and Keep Earning...Keep Spending...Keep Saving...</p>
+  </div>
+</div>
+
+</body>
+</html>
